@@ -1,0 +1,96 @@
+/* BODY */
+
+body {
+    background-image: url(/Assets/Imagenes/body2.jpg);
+}
+
+/* FORM */
+
+#formulario,
+.login-conteiner,
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario {
+    padding: 20px;
+    margin: 20px 30px 150px;
+}
+
+#formulario h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 20px;
+}
+
+#formulario button {
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
+    text-align: center;
+    border:1px solid var(--secondary);
+    color:#151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+#formulario a {
+    color: #151515;
+}
+
+
+.login-conteiner {
+    padding: 20px;
+    margin: 10px 30px 50px;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    gap: 20px;
+    width: 70%;
+    font-weight: 700;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+}
+
+hr {
+    border: 1px solid #7d7d7d;
+    width: 80%;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+#login-form input {
+    width: 230px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+.login-page {
+    gap: 10px;
+    padding: 10px;
+}
+
+.login-item,
+button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.login-item:last-child {
+    gap: 170px;
+}
+

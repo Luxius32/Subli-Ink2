@@ -1,0 +1,1045 @@
+/* Responsive pagina principal */
+
+/* WIDTH 1280 px */
+
+@media (max-width: 1280px) {
+
+    /* HEADER */
+    .barra-busqueda {
+        border-radius: 5px;
+        border: 1px solid var(--secondary);
+        width: 250px;
+        padding: 3px;
+    }
+
+    .cart-icon {
+        position: absolute;
+        left: 86%;
+    }
+
+    .navbar-list {
+        position: relative;
+        left: 35%;
+    }
+
+    .zona-derecha {
+        bottom: 4px;
+    }
+
+ 
+    /* MAIN */
+
+    /* Portada */
+
+    #portada {
+        max-width: 1280px;
+    }
+
+    /* Slider */
+    .slider-frame {
+        width: 1000px;
+    }
+
+    .slider-img {
+        width: 1000px;
+    }
+
+
+    /* Slider 2 */
+
+    .slider2 {
+        display: flex;
+        padding: 0px;
+        position: relative;
+    }
+
+    .slider2-info {
+        right: 5%;
+        top: 35%;
+    }
+
+    .tituloh2 {
+        font-size: 30px;
+    }
+
+    /* CARD */
+
+    #cards {
+        margin: 250px 15px;
+    }
+
+    .productos-conteiner {
+        gap: 30px;
+    }
+
+    .cards-subconteiner {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 60px;
+    }
+
+    .card-popular {
+        width: 300px;
+    }
+
+    .buttons-popular img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* WIDTH 1188 px */
+@media (max-width: 1188px) {
+
+    #portada {
+        max-width: 1188px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cart {
+        display: none;
+        right:  0px;
+    }
+
+    #cart-toggle:checked~.cart {
+        display: flex;
+    }
+
+
+    .tituloh2 {
+        font-size: 28px;
+    }
+
+    .slider-frame {
+        width: 900px;
+        gap: 60px;
+    }
+
+    .slider-img {
+        width: 850px;
+        height: 500px;
+        padding: 0 50px 50px;
+    }
+
+    .slider-frame ul {
+        position: relative;
+        left: 50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        position: relative;
+        right: 25px;
+        left: 7%;
+        top: -13px;
+        margin: 0;
+        width: 500px;
+    }
+
+    .navbar-list {
+        left: 15px;
+        top: 20px;
+    }
+
+    .barra-busqueda {
+        position: absolute;
+        left: 22%;
+        width: 300px;
+    }
+
+    #cards {
+        padding: 5px;
+        max-width: 1188px;
+    }
+
+    .card {
+        width: 210px;
+        height: 220px;
+    }
+
+    .cart {
+        display: none;
+    }
+
+    .card-popular {
+        width: 270px;
+        height: 350px;
+    }
+
+    .card-popular-info {
+        gap: 2px;
+    }
+
+    .productos-conteiner {
+        gap: 30px;
+    }
+
+    #nosotros {
+        max-width: 1188px;
+        padding: 10px;
+    }
+
+    #contacto {
+        max-width: 1188px;
+        padding: 10px;
+    }
+
+    .contactanos {
+        max-width: 1188px;
+    }
+
+    .phone-mail {
+        width: 700px;
+    }
+
+    .proveedores {
+        max-width: 1188px;
+        gap: 60px;
+    }
+
+    footer {
+        max-width: 1188px;
+    }
+}
+
+/* WIDTH 992 px */
+
+@media (max-width: 992px) {
+
+    /* Header */
+
+    header {
+        max-width: 992px;
+    }
+
+    .menu-label {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        order: 2;
+        z-index: 2;
+        cursor: pointer;
+
+    }
+
+    .logo-navbar {
+        display: block;
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar {
+        position: relative;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar-list {
+        position: absolute;
+        height: 350px;
+        top: 85px;
+        left: 3%;
+        right: 3%;
+        flex-direction: column;
+        gap: 30px;
+        background: linear-gradient(to top, var(--secondary), var(--button), #ffffff);
+        z-index: 2;
+        display: none;
+        border-radius: 15px;
+        border: 1px solid var(--secondary);
+        border-top: none;
+        box-shadow: 2px 2px 8px #7d7d7d;
+    }
+
+    #menu-toggle:checked+.navbar-list {
+        display: flex;
+    }
+    
+
+    .barra-busqueda {
+        position: absolute;
+        top: 30px;
+        left: 30%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .zona-derecha {
+        position: absolute;
+        top: -5%;
+        left: 82%;
+    }
+
+    .login {
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .login p {
+        display: none;
+    }
+
+    .login hr {
+        display: block;
+        width: 80%;
+        border: 1px solid #151515;
+    }
+
+    .cart-icon {
+        position: absolute;
+        left: 80%;
+        width: 25px;
+        height: 15px;
+    }
+
+    .envio {
+        display: none;
+    }
+
+    .slider-img {
+        width: 700px;
+        height: 400px;
+    }
+
+    .slider-frame {
+        width: 760px;
+    }
+
+    .slider2-info {
+        left: 55%;
+    }
+
+    .tituloh2 {
+        font-size: 21px;
+    }
+
+    .info-conteiner {
+        max-width: 992px;
+    }
+
+    .productos-conteiner {
+        gap: 30px;
+    }
+
+    .info-item,
+    .info-personal {
+        width: 80%;
+    }
+
+    .personal {
+        width: 500px;
+        gap: 20px;
+    }
+
+    .personal-item {
+        width: 100px;
+    }
+
+    .personal-item {
+        padding: 0px 10px 10px 10px;
+    }
+
+    .foto-carnet {
+        width: 80px;
+        height: 70px;
+    }
+
+    .phone-mail {
+        width: 600px;
+    }
+
+    .contactanos {
+        max-width: 992px;
+    }
+
+    .item {
+        font-size: 16px;
+        width: 300px;
+    }
+
+    #nosotros {
+        max-width: 992px;
+    }
+
+    .textarea {
+        width: 90%;
+    }
+
+    #cards {
+        margin: 250px 3px;
+    }
+
+    .card {
+        width: 200px;
+        height: 190px;
+        gap: 5;
+    }
+
+    .card-img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .card span {
+        font-size: 16px;
+    }
+}
+
+/* WIDTH 768px */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+    }
+
+    .barra-busqueda {
+        width: 225px;
+    }
+
+    .zona-derecha {
+        left: 79%;
+    }
+
+    .login {
+        font-size: 10px;
+    }
+
+    #portada {
+        max-width: 768px;
+    }
+
+    .slider-frame {
+        width: 570px;
+        gap: 90px;
+    }
+
+    .slider-img {
+        width: 520px;
+        height: 300px;
+        padding: 0 50px 50px;
+    }
+
+    .tituloh2 {
+        font-size: 18px;
+    }
+
+    .slider1 {
+        left: -1%;
+    }
+
+    .slider2 {
+        left: -1%;
+    }
+
+    .slider-info2 {
+        left: 57%;
+    }
+
+    .slider2-info h2 {
+        width: 218px;
+    }
+
+    .slider3-info {
+        left: 8%;
+    }
+
+    #cards {
+        max-width: 768px;
+    }
+
+    .cards-conteiner {
+        max-width: 768px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .productos-conteiner {
+        max-width: 768px;
+    }
+
+    .card {
+        width: 160px;
+        height: 180px;
+        gap: 5px;
+    }
+
+    .card-img {
+        width: 140px;
+        height: 110px;
+    }
+
+    .cards-subconteiner {
+        gap: 20px;
+    }
+
+    .card-popular {
+        width: 230px;
+        height: 280px;
+    }
+
+    .card-popular h3 {
+        font-size: 14px;
+    }
+
+    .buttons-popular img {
+        width: 14px;
+        height: 14px;
+    }
+
+    #nosotros {
+        max-width: 768px;
+    }
+
+    #nosotros h3 {
+        font-size: 16px;
+    }
+
+    .info-conteiner {
+        max-width: 768px;
+    }
+
+    .info-item {
+        height: 330px;
+    }
+
+    .info-item p {
+        font-size: 12px;
+    }
+
+    .info-personal {
+        height: 400px;
+    }
+
+    .personal {
+        flex-wrap: wrap;
+    }
+
+    .personal-item {
+        gap: 1px;
+    }
+
+    .contactanos {
+        max-width: 768px;
+    }
+
+    #contacto h2 {
+        font-size: 18px;
+    }
+
+    #contacto h3 {
+        font-size: 16px;
+    }
+
+    .phone-mail {
+        width: 450px;
+        flex-direction: column;
+    }
+
+    .proveedores {
+        width: 450px;
+    }
+
+    .proveedores img {
+        width: 150px;
+        height: 75px;
+    }
+}
+
+/* WIDTH 576px */
+
+@media (max-width: 576px) {
+
+    .barra-busqueda {
+        width: 120px;
+        left: 34%;
+    }
+
+    .zona-derecha {
+        left: 73%;
+        top: -1%;
+    }
+
+    #portada {
+        max-width: 576px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .slider-frame {
+        width: 380px;
+    }
+
+    .slider-img {
+        width: 370px;
+        height: 260px;
+        padding: 0 10px 50px;
+    }
+
+    .slogan {
+        width: 300px;
+        height: 50px;
+    }
+
+    .tituloh2 {
+        font-size: 13px;
+    }
+
+    .buttons {
+        padding: 5px;
+        margin: 6px;
+    }
+
+    .buttons a {
+        font-size: 10px;
+    }
+
+    .slider1 {
+        left: -4%;
+    }
+
+    .slider2 {
+        left: -3%;
+    }
+
+    .slider2-info {
+        right: 2%;
+        top: 20%;
+        gap: 0;
+        padding: 0;
+    }
+
+    .slider2 button {
+        position: relative;
+        top: -10px;
+    }
+
+    .slider2 h2 {
+        right: 30%;
+        width: 150px;
+        text-align: center;
+        top: 0px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .slider3 {
+        position: relative;
+        left: -4%;
+    }
+
+    .slider3 h2 {
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .slider3 button {
+        position: relative;
+        top: -10px;
+    }
+
+    .slider3-info {
+        gap: 0;
+        right: 40%;
+        top: 53px;
+    }
+
+    .card {
+        width: 120px;
+        height: 110px;
+        gap: 0;
+    }
+
+    .card span {
+        font-size: 10px;
+    }
+
+    .card-img {
+        width: 100px;
+        height: 80px;
+    }
+
+    #cards {
+        max-width: 576px;
+        padding: 0;
+    }
+
+    .cards-conteiner {
+        padding: 0;
+    }
+
+    .cards-subconteiner {
+        gap: 20px;
+    }
+
+    .productos h2 {
+        font-size: 18px;
+    }
+
+    #mas-vendidos h2 {
+        font-size: 18px;
+    }
+
+    .productos-conteiner {
+        max-width: 576px;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .portada-content {
+        max-width: 576px;
+    }
+
+    .card-popular {
+        width: 175px;
+        height: 260px;
+        padding: 1px;
+        text-align: center;
+        position: relative;
+    }
+
+    .card-popular h3 {
+        font-size: 12px;
+    }
+
+    .card-popular p {
+        font-size: 12px;
+        position: absolute;
+        bottom: 30%;
+    }
+
+    .card-popular span {
+        font-size: 12px;
+        position: absolute;
+        bottom: 40%;
+    }
+
+    .card-popular-info {
+        gap: 8px;
+        padding: 1px;
+    }
+
+    .buttons-popular {
+        font-size: 12px;
+        padding: 5px;
+        margin: 10px;
+        gap: 0px;
+        position: absolute;
+        bottom: 15px;
+    }
+
+    .buttons-popular img {
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+    }
+
+    #nosotros h2 {
+        font-size: 18px;
+    }
+
+    #nosotros h3 {
+        font-size: 12px;
+    }
+
+    #nosotros {
+        max-width: 576px;
+        padding: 0;
+    }
+
+    .info-conteiner {
+        width: 370px;
+    }
+
+    .info-item {
+        width: 95%;
+        height: 270px;
+    }
+
+    #contacto {
+        max-width: 576px;
+    }
+
+    #nosotros p {
+        font-size: 10px;
+    }
+
+    .info-personal {
+        width: 95%;
+    }
+
+    .personal {
+        gap: 7px;
+        padding: 30px 90px;
+        width: 380px;
+    }
+
+    .personal-item {
+        font-size: 10px;
+        width: 85px;
+    }
+
+    .foto-carnet {
+        width: 50px;
+        height: 40px;
+    }
+
+    footer {
+        max-width: 576px;
+    }
+
+    .contactanos-conteiner {
+        width: 95%;
+    }
+
+    .contactanos {
+        width: 350px;
+    }
+
+    #sumate {
+        max-width: 576px;
+        width: 95%;
+    }
+
+    .proveedores {
+        width: 340px;
+        gap: 5px;
+    }
+
+    .proveedores img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .phone-mail {
+        width: 320px;
+    }
+
+    .item {
+        max-width: 250px;
+        font-size: 12px;
+    }
+
+    #contacto h2 {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #contacto h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .sumate-form input {
+        width: 215px;
+    }
+
+    .sumate-info p {
+        font-size: 10px;
+    }
+
+    .login {
+        font-size: 9px;
+    }
+
+    .menu-icon {
+        width: 40px;
+        height: 19px;
+    }
+
+    .navbar-list {
+        min-width: none;
+    }
+}
+
+/* FORM 2 CREAR CUENTA */
+
+@media (max-width: 992px) {
+    .conteiner {
+        max-width: 600px;
+    }
+
+    .form-registro input {
+        width: 440px;
+        font-size: 14px;
+    }
+
+    .form-registro {
+        font-size: 14px;
+    }
+
+    .terminos {
+        font-size: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* WIDTH 768px */
+
+@media (max-width: 768px) {
+    .conteiner {
+        max-width: 600px;
+    }
+
+    .form-registro input {
+        width: 280px;
+    }
+}
+
+/* WIDH 576px */
+
+@media (max-width: 576px) {
+    #formulario {
+        padding: 5px;
+        margin: 20px 5px 150px
+    }
+
+    .conteiner {
+        max-width: 500px;
+    }
+
+    .form-registro input {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .conteiner span {
+        flex-direction: column;
+    }
+
+    .form-registro {
+        font-size: 12px;
+    }
+
+    .conteiner h3 {
+        text-align: center;
+    }
+
+    .terminos {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+/* WIDTH */
+
+@media (max-width: 480px) {
+    #formulario {
+        padding: 5px;
+        margin: 20px 5px 150px
+    }
+}
+
+
+/* FORM 1 INICIAR SESION */
+
+/* WIDTH 835px */
+
+@media (max-width: 835px) {
+
+    #login-form {
+        font-size: 14px;
+    }
+
+    .login-item {
+        flex-direction: column;
+    }
+
+    .login-item:last-child {
+        gap: 4px;
+    }
+
+    #login-form input {
+        width: 300px;
+    }
+
+    #formulario a {
+        font-size: 12px;
+    }
+
+    #formulario h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    #login-form {
+        font-size: 12px;
+    }
+
+    #formulario h1 {
+        font-size: 18px;
+    }
+
+    #login-form input {
+        width: 250px;
+    }
+
+    #formulario a {
+        font-size: 10px;
+    }
+}
+
+/* OLVIDE MI CONTRASEÑA */
+
+@media (max-width: 992px) {
+    .recu-conteiner {
+        max-width: 600px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .input input {
+        width: 440px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .input input {
+        width: 380px;
+    }
+
+    .recu-conteiner {
+        width: 85%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .input input {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .recu-conteiner p {
+        font-size: 12px;
+    }
+
+    .recu-conteiner {
+        font-size: 12px;
+    }
+}

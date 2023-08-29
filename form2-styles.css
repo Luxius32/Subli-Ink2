@@ -1,0 +1,126 @@
+body {
+    background-image: url(/Assets/Imagenes/body2.jpg);
+}
+
+/* MAIN */
+
+#formulario,
+.conteiner,
+.terminos,
+.google {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+span,
+.buttons,
+.input-item,
+.input-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#formulario {
+    padding: 20px;
+    margin: 20px 30px 150px;
+}
+
+#formulario h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 20px;
+}
+
+
+
+.conteiner {
+    padding: 20px;
+    margin: 10px 30px 50px;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    gap: 25px;
+    width: 70%;
+    font-weight: 700;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+}
+
+.conteiner a {
+    color: #151515;
+}
+
+.conteiner span {
+    gap: 5px;
+}
+
+.conteiner h3 {
+    font-size: 12px;
+}
+
+.google {
+    gap: 10px;
+}
+
+.buttons {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
+    text-align: center;
+    border: 1px solid var(--secondary);
+    color: #151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+
+hr {
+    border: 1px solid #7d7d7d;
+    width: 80%;
+}
+
+.form-registro,
+.input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-registro {
+    gap: 10px;
+}
+
+.input-item {
+    gap: 2px;
+    position: relative;
+    right: 0%;
+}
+
+.form-registro input {
+    width: 600px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+.terminos {
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+
+.input-checkbox {
+    display: flex;
+    gap: 5px;
+}

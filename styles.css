@@ -1,0 +1,862 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/* colours */
+:root {
+    --primary: #eb7072;
+    --secondary: #f5ba90;
+    --button: #f5e2b8;
+    --font: #151515;
+    --font2: #dadada;
+    --various: #a2caa5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Architects daughter";
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to bottom, var(--secondary), var(--button), #ffffff);
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    position: relative;
+    gap: 10px;
+}
+
+header a {
+    color: var(--font);
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    position: relative;
+    bottom: 15px;
+}
+
+.envio,
+.navbar,
+.navbar-mid,
+.navbar-list,
+.header-mid,
+.zona-derecha,
+.login {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.envio {
+    gap: 2px;
+    color: var(--font);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    left: 90px;
+}
+
+.envio img {
+    width: 10%;
+}
+
+.navbar {
+    gap: 80px;
+    position: relative;
+    width: 850px;
+    left: 40px;
+}
+
+.logo-navbar {
+    display: none;
+}
+
+.menu-label,
+#menu-toggle,
+#cart-toggle {
+    display: none;
+}
+
+.navbar-list {
+    gap: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 5px;
+    left: 35%;
+}
+
+.zona-derecha {
+    gap: 10px;
+    padding: 0;
+    position: relative;
+    bottom: 3px;
+    right: 15px;
+    z-index: 2;
+}
+
+.login {
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.login a {
+    width: 90px;
+}
+
+.login hr {
+    display: none;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    left: 100%;
+    top: 38%;
+}
+
+.barra-busqueda {
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+    position: absolute;
+    top: 20px;
+    right: 58%;
+    top: 15px;
+    width: 300px;
+    padding: 3px;
+}
+
+.cart {
+    position: absolute;
+    top: 80px;
+    right:  -75px;
+    padding: 50px 30px;
+    flex-direction: column;
+    display: none;
+    gap: 30px;
+    height: calc(100vh - 65px);
+    width: 400px;
+    overflow-y: scroll;
+    z-index: 2;
+    background: linear-gradient(to top, var(--button), var(--secondary), white);
+    border-radius: 15px;
+    transform: translate(200%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+
+#cart-toggle:checked+.cart {
+    display: flex;
+    transform: translate(0%);
+    transition: all 0.5 cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+
+::placeholder {
+    padding: 5px;
+    color: #c5c5c5;
+    font-style: italic;
+    font-family: "Architects Daughter";
+}
+
+.cart h2 {
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    gap: 20px;
+    background-color: #2323234e;
+    padding: 20px;
+    border: 1px solid var(--electric);
+    border-radius: 10px;
+}
+
+.cart-item img {
+    height: 65px;
+    width: 65px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.item-bid {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.item-handler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    left: 230px;
+}
+
+.quantity-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.up {
+    border: 1px solid var(--secondary);
+}
+
+.down {
+    border: 1px solid var(--secondary);
+}
+
+.divider {
+    margin-top: 20px;
+    border: 0.5px solid var(--secondary);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cart-total p {
+    font-weight: 700;
+}
+
+.cart-total span {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/* HEADER */
+
+/* BODY */
+body {
+    background-image: url(/Assets/Imagenes/body2.jpg);
+    font-family: "Architects Daughter";
+    overflow: auto;
+}
+
+#portada {
+    /* max-width: 1300px; */
+    position: relative;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#portada a {
+    color: #151515;
+}
+
+/* Slider */
+.slider-frame {
+    width: 1280px;
+    /* Pongo heitgh auto para que la altura la de la imagen  */
+    height: auto;
+    margin: 30px auto 0;
+    display: flex;
+    /* Overflow para ocultar lo que este fuera del width y height */
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-img {
+    width: 1300px;
+    height: 600px;
+    padding: 0 50px 100px;
+}
+
+/* Slider 1 */
+
+.slider1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+}
+
+.slogan {
+    position: absolute;
+    top: 65%;
+}
+
+/* Slider 2 */
+
+.slider2 {
+    display: flex;
+    padding: 0px;
+    position: relative;
+}
+
+.slider2-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    font-family: "Architects Daughter";
+}
+
+.tituloh2 {
+    font-size: 38px;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    padding: 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
+    text-align: center;
+    border: 1px solid var(--secondary);
+    color: #151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+/* Slider 3 */
+
+.slider3-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    left: 15%;
+    top: 37%;
+    font-family: "Architects Daughter";
+}
+
+/* Cards */
+
+#cards {
+    position: relative;
+    padding: 10px;
+    margin: 250px 30px;
+}
+
+.cards-conteiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 230px;
+}
+
+.productos,
+#mas-vendidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.productos h2 {
+    padding: 20px;
+    position: absolute;
+    top: -80px;
+}
+
+#mas-vendidos h2 {
+    padding: 20px;
+    position: absolute;
+    top: -80px;
+
+}
+
+.productos-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.cards-subconteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: 240px;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+    /* border: 1px solid #c1c1c1; */
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+
+}
+
+.card-img {
+    width: 200px;
+    height: 180px;
+}
+
+.card span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card-popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+    width: 265px;
+    height: 350px;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+.buttons-popular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
+    text-align: center;
+    border: 1px solid var(--secondary);
+    color: #151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+.card-popular-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-popular h3 {
+    font-size: 16px;
+}
+
+.card-popular span {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.card-popular p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.buttons-popular img {
+    width: 20px;
+    height: 20px;
+}
+
+/* NOSOTROS */
+
+#nosotros,
+.info-conteiner,
+.info-item,
+.info-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#nosotros {
+    padding: 30px 40px;
+}
+
+#nosotros p {
+    font-family: "Architects Daughter";
+    font-size: 14px;
+}
+
+.info-item {
+    text-align: justify;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+    width: 90%;
+    height: 270px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+.info-personal {
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+    width: 90%;
+    height: 270px;
+    gap: 5px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+.personal {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 900px;
+    height: 10px;
+    text-align: center;
+    gap: 40px;
+}
+
+.personal-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    width: 150px;
+    gap: 1px;
+}
+
+.personal-item span {
+    padding: 5px;
+}
+
+.foto-carnet {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+/* CONTACTO */
+
+#contacto,
+#sumate,
+.sumate-info,
+.contactanos,
+form,
+.item,
+.dudas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-mail,
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto {
+    padding: 10px 30px;
+    margin: 150px 10px;
+
+}
+
+#contacto h2 {
+    font-family: "Architects Daughter";
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    padding: 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.contactanos {
+    display: flex;
+    gap: 20px;
+}
+
+.contactanos-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+}
+
+.contactanos-conteiner button {
+    width: 50%;
+}
+
+.phone-mail {
+    gap: 5px;
+    padding: 10px;
+}
+
+.item {
+    gap: 15px;
+    font-family: "Architects Daughter";
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 350px;
+    height: 90px;
+}
+
+.dudas {
+    padding: 5px 30px;
+    gap: 20px;
+}
+
+.dudas h3 {
+    font-family: "Architects Daughter";
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    padding: 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.textarea {
+    resize: none;
+    padding: 10px;
+}
+
+#sumate {
+    padding: 50px 30px;
+    margin: 300px 50px 150px;
+    gap: 20px;
+    font-family: "Architects Daughter";
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    gap: 20px;
+    width: 80%;
+    font-weight: 700;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+    letter-spacing: 1px;
+}
+
+.sumate-info {
+    text-align: center;
+    gap: 20px;
+}
+
+.sumate-form {
+    gap: 10px;
+}
+
+.sumate-form input {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+#sumate button {
+    width: 50%;
+}
+
+
+
+/* CIERRE */
+
+#cierre,
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cierre {
+    padding: 20px 30px;
+    background: linear-gradient(to top, var(--primary), var(--secondary));
+    gap: 30px;
+}
+
+.redes {
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+}
+
+.redes-icon,
+.proveedores,
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-icon {
+    gap: 20px;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #151515;
+}
+
+.proveedores {
+    gap: 200px;
+    padding: 10px;
+}
+
+.copyright {
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright img {
+    width: 15px;
+    height: 15px;
+}
+
+/* RECUPERAR CONTRASEÑA */
+
+#recuperar,
+.recu-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#recuperar {
+    padding: 20px;
+    margin: 20px 30px 150px;
+}
+
+.recu-conteiner {
+    padding: 20px;
+    margin: 10px 30px 50px;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    gap: 25px;
+    width: 70%;
+    font-weight: 700;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.input input {
+    width: 600px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+.buttons {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
+    text-align: center;
+    border: 1px solid var(--secondary);
+    color: #151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
